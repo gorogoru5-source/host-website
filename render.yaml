@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: python-hosting-platform
+    runtime: docker
+    plan: free
+    envVars:
+      - key: SECRET_KEY
+        sync: false
+      - key: FIREBASE_SERVICE_ACCOUNT_JSON
+        sync: false
