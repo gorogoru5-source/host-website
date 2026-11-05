@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Admin{% endblock %}{% block content %}<h1>Admin Panel</h1><div class="card"><h2>Users</h2>{% for u in users %}<p><strong>{{ u.name }}</strong> — {{ u.email }} — ৳{{ u.balance }} — {{ u.status }}</p>{% endfor %}</div>{% endblock %}
